@@ -1,0 +1,28 @@
+{
+  "name": "friendapp",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.11.3"
+  },
+  "description": "a friendly app!",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freym827/friendapp.git"
+  },
+  "author": "matthew frey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freym827/friendapp/issues"
+  },
+  "homepage": "https://github.com/freym827/friendapp#readme"
+}
