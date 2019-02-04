@@ -1,6 +1,5 @@
 $(() => {   
     $("#btn").on("click", () => {
-        console.log("hello")
         $.ajax("/api/friends/", {
             type: "GET",
           }).then(response => {
