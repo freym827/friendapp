@@ -1,5 +1,6 @@
 $(() => {  
     getstuff = () => {
+        console.log("hello")
         $.ajax("/api/friends/", {
             type: "GET",
           }).then(response => {
@@ -8,7 +9,6 @@ $(() => {
     } 
     findmatch = (response) => {
         const arrayArray = []
-        console.log(response)
         for(i=0;i<response.friends.length;i++){
           tempArray = [
               response.friends[i].score_1,
@@ -42,7 +42,7 @@ $(() => {
         $("#wSh").css("display", "none")
         $("#wSurvey").css("display", "none")
         $("#wMatch").css("display", "block")
-        $("#mHead").html("Congratulations! You have been matched with " + bestMatch.name)
+        $("#mHead").html("Congratulations " + response.friends[response.friends.length-1].name + "! You have been matched with " + bestMatch.name)
         $("#mImg").attr("src", bestMatch.photo)
     }
     
@@ -54,7 +54,6 @@ $(() => {
             },
             data: JSON.stringify(newperson)
           }).then(response => {
-            console.log(response)
           });
     }
     //smooth scrolling links
@@ -112,6 +111,7 @@ $(() => {
             s9: $("#q9").val(),
             s10: $("#q10").val()
         }
+        poststuff(newperson)
         getstuff()
         $("#name").val("") 
         $("#photo").val("")
