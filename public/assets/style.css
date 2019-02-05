@@ -1,3 +1,222 @@
-.hello {
-    color: red;
+* {
+    border-style: border-box;
+}
+:target {
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
+.wrapperhome {
+    height: 100vh;
+    background-image: url("../assets/images/collagesmall.png");
+    background-size: cover;
+}
+.title {
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1.5px 1.5px #DC143C;
+    text-align: center;
+    font-size: 30px;
+}
+.enterwords {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-top: 12vh;
+    text-shadow: 0px 1px 1px black;
+}
+.entersite {
+    width: 260px;
+    height: 60vh;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 12vh;
+    background-image: linear-gradient(to top right, #0000CD , #1E90FF);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px black;
+    padding: 10px;
+}
+.enterbtn {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #DC143C;
+    color: white;
+    box-shadow: 2px 2px 4px black;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    height: 60px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+.wrapperhome2 {
+    height: 100vh;
+    padding-top: 40px;
+}
+.dreamlabel {
+    font-family: 'Pacifico', cursive;
+    color: gray;
+    text-shadow: 0px 1px 1px dimgray;
+    text-align: center;
+}
+
+.dreamtext {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.75;
+    color: gray;
+    font-weight: 200;
+    text-shadow: 0px .5px .5px dimgray;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}
+.foottxt {
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+    margin-top: 220px;
+}
+.wrappersurveyhome {
+    height: 100vh;
+    background-image: url("../assets/images/backsurveysmallfaded.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+.welcome {
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1.5px 1.5px black;
+    text-align: center;
+    font-size: 40px;
+}
+.explanations {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 17vh;
+    line-height: 1.75;
+    color: white;
+    font-weight: 900;
+    text-shadow: 0px 2px 2px black;
+    font-size: 30px;
+}
+.gosurvey {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #0000CD;
+    color: white;
+    box-shadow: 2px 2px 4px black;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    height: 60px;
+    margin-top: 17vh;
+    font-size: 16px;
+}
+.wrappersurvey {
+    text-align: center;
+}
+input {
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border-style: 1px solid gray;
+    font-size: 20px;
+}
+select {
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    border-style: 1px solid gray;
+    font-size: 20px;
+}
+h3 {
+    border-bottom: 1px solid black;
+    width: 100px;
+    margin: 10px auto;
+}
+.q {
+    text-align: left;
+    margin-left: 5%;
+    font-size: 20px;
+}
+.submitbtn {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #0000CD;
+    color: white;
+    box-shadow: 2px 2px 4px black;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    height: 60px;
+    margin-top: 60px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.wrappermatch {
+    display: none;
+    height: 100vh;
+    padding-top: 20px;
+}
+.matchhead{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.matchimg {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 20px;
+    border: 2px solid #0000CD;
+    box-shadow: 2px 2px 4px black;
+}
+.homebtn {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #0000CD;
+    color: white;
+    box-shadow: 2px 2px 4px black;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    height: 60px;
+    margin-top: 450px;
+    font-size: 16px;
+}
+
+@media only screen and (min-height: 750px) {
+    .dreamtext {
+        font-size: 20px;
+    }
 }

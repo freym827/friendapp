@@ -1,5 +1,6 @@
 var express = require("express");
 const bodyParser = require('body-parser');
+var path = require("path");
 var PORT = process.env.PORT || 8080;
 
 var app = express();
@@ -11,7 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require("./routes")(app)
+require("./routes/apiroutes")(app)
+require("./routes/htmlroutes")(app)
 
 app.listen(PORT, function() {
   console.log("Server listening on: http://localhost:" + PORT);
