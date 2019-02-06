@@ -220,3 +220,128 @@ h3 {
         font-size: 20px;
     }
 }
+
+@media only screen and (min-width: 750px) {
+    .dreamtext {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .dreamlabel {
+        font-size: 50px;
+    }
+    .entersite {
+        width: 60%;
+    }
+    .title {
+        font-size: 55px;
+    }
+    .enterwords {
+        font-size: 30px;
+        margin-bottom: 80px;
+    }
+    .welcome {
+        font-size: 60px;
+    }
+    .explanations {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 17vh;
+        line-height: 1.75;
+        color: white;
+        font-weight: 900;
+        text-shadow: 0px 2px 2px black;
+        font-size: 40px;
+    }
+    .gosurvey {
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #0000CD;
+        color: white;
+        box-shadow: 2px 2px 4px black;
+        border: none;
+        border-radius: 4px;
+        width: 60%;
+        height: 80px;
+        margin-top: 19vh;
+        font-size: 20px;
+    }
+    .matchhead{
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+    .matchimg {
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-top: 20px;
+        border: 2px solid #0000CD;
+        box-shadow: 2px 2px 4px black;
+    }
+    .wrapperhome {
+        background-image: url("../assets/images/collagemed.png");
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .wrapperhome {
+        height: 100vh;
+        background-image: url("../assets/images/collage3.png");
+        background-size: cover;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .enterwords {
+        font-size: 25px;
+    }
+    .entersite {
+        width: 30%;
+        height: 60vh;
+        position: absolute;
+        left: 30%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-top: 12vh;
+        background-image: linear-gradient(to top right, #0000CD , #1E90FF);
+        border-radius: 10px;
+        box-shadow: 5px 5px 8px black;
+        padding: 10px;
+    }
+    .wrappersurveyhome {
+        height: 100vh;
+        background-image: url("../assets/images/backsurvey.jpg");
+    }
+    .gosurvey {
+        width: 200px;
+    }
+    input {
+        width: 40%;
+    }
+    select {
+        width: 40%;
+    }
+    h3 {
+        border-bottom: 1px solid black;
+        width: 100px;
+        margin: 10px auto;
+    }
+    .q {
+        margin-left: 30%;
+    }
+    .submitbtn {
+        width: 20%;
+    }
+    .homebtn {
+        margin-top: 600px;
+        width: 200px;
+    }
+}
